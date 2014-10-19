@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  hunt
 //
-//  Created by Xiangying Sun on 10/16/14.
-//  Copyright (c) 2014 Xiangying Sun. All rights reserved.
+//  Created by Yi Qin on 10/16/14.
+//  Copyright (c) 2014 Yi Qin. All rights reserved.
 //
 
 import UIKit

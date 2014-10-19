@@ -13,6 +13,9 @@
 		381702A319F0987600B41945 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381702A219F0987600B41945 /* Images.xcassets */; };
 		381702A619F0987600B41945 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381702A419F0987600B41945 /* LaunchScreen.xib */; };
 		381702B219F0987600B41945 /* huntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381702B119F0987600B41945 /* huntTests.swift */; };
+		381702BC19F0993600B41945 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381702BB19F0993600B41945 /* ListViewController.swift */; };
+		381702C019F0BDD500B41945 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381702BF19F0BDD500B41945 /* ItemsManager.swift */; };
+		8D9CFCB919F405AA00A63117 /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CFCB819F405AA00A63117 /* ScavengerHuntItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		381702AB19F0987600B41945 /* huntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = huntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		381702B019F0987600B41945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381702B119F0987600B41945 /* huntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = huntTests.swift; sourceTree = "<group>"; };
+		381702BB19F0993600B41945 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		381702BF19F0BDD500B41945 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
+		8D9CFCB819F405AA00A63117 /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +83,12 @@
 		3817029819F0987600B41945 /* hunt */ = {
 			isa = PBXGroup;
 			children = (
+				381702BF19F0BDD500B41945 /* ItemsManager.swift */,
 				3817029B19F0987600B41945 /* AppDelegate.swift */,
 				3817029D19F0987600B41945 /* ViewController.swift */,
 				3817029F19F0987600B41945 /* Main.storyboard */,
+				381702BB19F0993600B41945 /* ListViewController.swift */,
+				8D9CFCB819F405AA00A63117 /* ScavengerHuntItem.swift */,
 				381702A219F0987600B41945 /* Images.xcassets */,
 				381702A419F0987600B41945 /* LaunchScreen.xib */,
 				3817029919F0987600B41945 /* Supporting Files */,
@@ -161,9 +170,11 @@
 				TargetAttributes = {
 					3817029519F0987600B41945 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = U49UQ4SP28;
 					};
 					381702AA19F0987600B41945 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = U49UQ4SP28;
 						TestTargetID = 3817029519F0987600B41945;
 					};
 				};
@@ -212,8 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D9CFCB919F405AA00A63117 /* ScavengerHuntItem.swift in Sources */,
 				3817029E19F0987600B41945 /* ViewController.swift in Sources */,
 				3817029C19F0987600B41945 /* AppDelegate.swift in Sources */,
+				381702BC19F0993600B41945 /* ListViewController.swift in Sources */,
+				381702C019F0BDD500B41945 /* ItemsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +352,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = hunt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,7 +364,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = hunt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +425,7 @@
 				381702B719F0987600B41945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381702B819F0987600B41945 /* Build configuration list for PBXNativeTarget "huntTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +434,7 @@
 				381702BA19F0987600B41945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
